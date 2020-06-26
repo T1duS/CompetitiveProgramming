@@ -1,5 +1,5 @@
 # CompetitiveProgramming
-From now on, I'm thinking of maintaining my CP codes.
+From now on(July 2020), I'm thinking of maintaining my CP codes.
 
 For my old codes refer to the following links:-   
 https://codeforces.com/profile/T1duS  

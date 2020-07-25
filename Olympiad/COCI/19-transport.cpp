@@ -27,7 +27,7 @@ In other words the condition is min prefix of part I >= 0 and
 sum of part I + min prefix of part II >= 0
 
 This is same as
-mntoroot[u] >= 0 ans
+mntoroot[u] >= 0 and
 smtoroot[u]+mnfromroot[v] >= 0
 
 One more condition to check is u and v lie on different subtrees

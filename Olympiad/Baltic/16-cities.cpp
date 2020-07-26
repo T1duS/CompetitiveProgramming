@@ -7,8 +7,9 @@ We can observe that in the final spanning tree of subgraph formed will contain a
 every subtree of the vertex contains <= 2 important nodes
 We can prove this by centroid like logic.
 Now we can use bitmask dp by taking important nodes 1 or 2 at a time.
-Complexity O(k*mlogn+k^2*mlogn+n*k^2*2^k)
-But constant factor is pretty low(Its the fastest soln on oj.uz yet :D)
+Complexity O(k*mlogn+k^2*mlogn+n*k^2*2^k) = O(k^2*mlogn+n*k^2*2^k)
+Instead of k^2*2^k bitmask dp, you can just manually look at 15 choices of pairings(First pick lone element then with 2nd element there are 3 choices)
+So, it can become O(k^2*mlogn+15n)
 */
 
 // --------------------------------------------------<TEMPLATE>--------------------------------------------------

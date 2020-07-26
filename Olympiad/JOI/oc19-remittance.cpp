@@ -1,3 +1,9 @@
+/*
+Soln:
+Just iterate over the array logn times. 
+Money cannot be divided more than logn times.
+*/
+
 // --------------------------------------------------<TEMPLATE>--------------------------------------------------
 // --------------------<optimizations>--------------------
 /*

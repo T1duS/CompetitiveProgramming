@@ -1,3 +1,8 @@
+/*
+Soln:
+https://github.com/mostafa-saad/MyCompetitiveProgramming/blob/master/Olympiad/COCI/official/2009/contest4_solutions/solutions.pdf
+*/
+
 // --------------------------------------------------<TEMPLATE>--------------------------------------------------
 // --------------------<optimizations>--------------------
 /*

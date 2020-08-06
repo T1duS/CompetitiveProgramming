@@ -1,3 +1,9 @@
+/*
+Soln:
+Keep track of when prefix sums get < 0 and keep track of the last time you had the set of prefix sums using map.
+dp[i] = number of pairs ending at i.
+*/
+
 // --------------------------------------------------<TEMPLATE>--------------------------------------------------
 // --------------------<optimizations>--------------------
 /*

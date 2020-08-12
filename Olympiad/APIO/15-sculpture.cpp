@@ -191,46 +191,44 @@ int dp2[2005];
 void solvethetestcase(){
     cin >> n >> x >> y;
     FOR(i,1,n+1){
-    	cin >> a[i];
-    	pref[i] = pref[i-1]+a[i];
+        cin >> a[i];
+        pref[i] = pref[i-1]+a[i];
     }
     int cur = (1LL<<41)-1;
     FORD(bt,40,0){
-    	// trace(bt,cur);
-    	cur ^= (1LL<<bt);
-    	if(x-1){
-    		REP(i,n+2){
-    			REP(j,n+2){
-    				dp1[i][j] = 0;
-    			}
-    		}
-    		dp1[0][0] = 1;
-    		FOR(i,1,n+1){
-    			FOR(j,1,i+1){
-    				if(((pref[i]-pref[j-1])&cur) != (pref[i]-pref[j-1])) continue;
-    				FOR(k,1,i+1){
-    					dp1[i][k] |= dp1[j-1][k-1];
-    				}
-    			}
-    		}
-    		bool flag = 0;
-    		FOR(k,x,y+1) flag |= (dp1[n][k]);
-    		if(!flag) cur ^= (1LL<<bt);
-    	}
-    	else{
-    		REP(i,n+2) dp2[i] = INF;
-    		dp2[0] = 0;
-    		FOR(i,1,n+1){
-    			FOR(j,1,i+1){
-    				if(((pref[i]-pref[j-1])&cur) != (pref[i]-pref[j-1])) continue;
-    				FOR(k,1,i+1){
-    					remin(dp2[i],1+dp2[j-1]);
-    				}
-    			}
-    		}
-    		if(dp2[n] > y) cur ^= (1LL<<bt); 
-    	}
-    	
+        // trace(bt,cur);
+        cur ^= (1LL<<bt);
+        if(x-1){
+            REP(i,n+2){
+                REP(j,n+2){
+                    dp1[i][j] = 0;
+                }
+            }
+            dp1[0][0] = 1;
+            FOR(i,1,n+1){
+                FOR(j,1,i+1){
+                    if(((pref[i]-pref[j-1])&cur) != (pref[i]-pref[j-1])) continue;
+                    FOR(k,1,i+1){
+                        dp1[i][k] |= dp1[j-1][k-1];
+                    }
+                }
+            }
+            bool flag = 0;
+            FOR(k,x,y+1) flag |= (dp1[n][k]);
+            if(!flag) cur ^= (1LL<<bt);
+        }
+        else{
+            REP(i,n+2) dp2[i] = INF;
+            dp2[0] = 0;
+            FOR(i,1,n+1){
+                FOR(j,1,i+1){
+                    if(((pref[i]-pref[j-1])&cur) != (pref[i]-pref[j-1])) continue;
+                    remin(dp2[i],1+dp2[j-1]);
+                }
+            }
+            if(dp2[n] > y) cur ^= (1LL<<bt); 
+        }
+        
     }
     cout << cur << endl;
 }

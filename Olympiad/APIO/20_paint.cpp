@@ -1,3 +1,7 @@
+/*
+Soln:
+https://drive.google.com/file/d/1ZZIUOhvEl-sldF9eY8HSjTMnusHsbGsM/view
+*/
 #include "paint.h"
 #include <bits/stdc++.h>
 using namespace std;

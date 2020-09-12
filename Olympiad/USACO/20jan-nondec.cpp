@@ -25,7 +25,7 @@ int dp_sub[21][21][2];
 void build(int l,int r){
     if(l > r) return;
     int mid = (l+r)/2;
-    // dp1[mid][i][j] = number of non-dec non-empty sequences from mid-i..mid with max values = j
+    // dp1[mid][i][j] = number of non-dec non-empty sequences from mid-i..mid with max value = j
     FOR(i,1,k+1){
         FOR(j,i,k+1){
             dp_sub[i][j][0] = 0;

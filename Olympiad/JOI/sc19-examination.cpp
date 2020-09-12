@@ -11,7 +11,7 @@ using namespace std;
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
 
-typedef tree<pii,null_type,less<pii>,rb_tree_tag,tree_order_statistics_node_update> indexed_set;
+typedef tree<int,null_type,less_equal<int>,rb_tree_tag,tree_order_statistics_node_update> indexed_set;
 
 const int MX = 200005;
 
@@ -24,7 +24,7 @@ indexed_set seg[2*MX];
 
 int SZ = 0;
 
-void upd(int pos,pii val){
+void upd(int pos,int val){
     pos += SZ;
     while(pos){
         seg[pos].insert(val);
@@ -38,12 +38,12 @@ int query(int l,int val){
     int res = 0;
     while(l < r){
         if(l%2){
-            res += seg[l].size()-seg[l].order_of_key({val,-1});
+            res += seg[l].size()-seg[l].order_of_key(val);
             l++;
         }
         if(r%2){
             --r;
-            res += seg[r].size()-seg[r].order_of_key({val,-1});
+            res += seg[r].size()-seg[r].order_of_key(val);
         }
         l /= 2;
         r /= 2;
@@ -70,6 +70,7 @@ signed main(){
     sort(a,a+n);
     REP(i,q){
         cin >> quer[i].S.F >> quer[i].S.S >> quer[i].F.F;
+        quer[i].F.F = max(quer[i].F.F,quer[i].S.F+quer[i].S.S);
         s.insert(quer[i].S.F);
         quer[i].F.S = i;
     }
@@ -83,10 +84,10 @@ signed main(){
     int ind = n-1;
     for(int i = q-1; i >= 0; i --){
         while(ind >= 0 and a[ind].F.F >= quer[i].F.F){
-            upd(a[ind].S.F,{a[ind].S.S,a[ind].F.S});
+            upd(a[ind].S.F,a[ind].S.S);
             ind--;
         }
         ans[quer[i].F.S] = query(quer[i].S.F,quer[i].S.S);
     }
-    REP(i,q) cout << ans[i] << endl;
+    REP(i,q) cout << ans[i] << "\n";
 }

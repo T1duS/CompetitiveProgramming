@@ -19,7 +19,7 @@ vi find_routers(int l, int n, int q) {
     vector<pii> quer;
     ans.pb(0);
     FOR(i,1,n){
-    	int low = ans.back()+1,high = l-2*(n-1-i),mid;
+    	int low = ans.back()+1,high = l-2*(n-1-i)+1,mid;
     	for(auto x:quer){
     		if(x.S < i-1) continue;
     		else if(x.S == i-1) remax(low,x.F+1);

@@ -1,0 +1,40 @@
+Past IOITC problems and testdata:
+
+2006 - 09 IOITC, problem statements and test data:
+https://www.dropbox.com/sh/k3gv856sy6ra2lh/AADGs333h8Mm3Dn4AstMtPuaa?dl=0
+
+2010 - 2012 problems:
+https://www.dropbox.com/sh/3dpr9sknbu0ufbj/AAAQaPiMFnwGgqdmmTP7TrfBa?dl=0
+
+2010 testdata:
+https://www.dropbox.com/sh/rbh5sch1fuvmapi/AAAd-WfmM0bIMrY2PGJhxk72a?dl=0
+
+2011 testdata:
+https://www.dropbox.com/sh/5c0e359xntm0yd5/AABVTICmKQHgxX1oHwQ2Y-eDa?dl=0
+
+2012 testdata:
+https://www.dropbox.com/sh/qg4quqsqqfyr3ez/AACgqkzK_IXr_aCQXJabY0Mea?dl=012%3A35
+
+2013 problems:
+https://www.dropbox.com/sh/au497an8kns25tz/AAAvqugPA3wvYpLEPJvdcbd_a?dl=0
+
+2013 testdata:
+https://www.dropbox.com/sh/e6xhba7bes2auvo/AAD-K6tMxSSjzrzSXHc7Tj4Pa?dl=0
+
+2014 problems:
+https://www.dropbox.com/sh/vj343m1awj376to/AABYkUplk1tCqVU0iJnYptrla?dl=0
+
+2014 testdata:
+Should get.
+
+2015 problems + testdata:
+https://www.dropbox.com/sh/lyee7c20vvkgf5h/AAAdOBd1eW76TRG5HT3PpNxpa?dl=0
+
+2016 TST problems + testdata:
+https://www.dropbox.com/s/latju020bikjgv1/2016TSTsProblemsAndTestData.tar.gz?dl=0
+
+2016 Practice problems + testdata:
+https://www.dropbox.com/s/uaiwq25o2888jse/2016IOITCPracticeTestsProblemsAndTestdata.tar.gz?dl=0
+
+2017 TST problems + testdata: (Possibly slight changes from the final test data)
+https://www.dropbox.com/sh/avoibz7nao0bcua/AAAX_DckIHTU9hGYTBBRfemna?dl=0

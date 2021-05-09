@@ -38,3 +38,7 @@ https://www.dropbox.com/s/uaiwq25o2888jse/2016IOITCPracticeTestsProblemsAndTestd
 
 2017 TST problems + testdata: (Possibly slight changes from the final test data)
 https://www.dropbox.com/sh/avoibz7nao0bcua/AAAX_DckIHTU9hGYTBBRfemna?dl=0
+
+2018 day1/2
+https://www.codechef.com/IOITC181
+https://www.codechef.com/IOITC182
